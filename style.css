@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Fredoka One", cursive;
+}
+body {
+	background-color: rgb(0, 66, 66);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+}
+ul {
+	list-style: none;
+	font-size: 100px;
+	font-weight: bold;
+	display: flex;
+	color: rgb(0, 66, 66);
+	margin-bottom: 60px;
+}
+ul li {
+	padding: 0 5px;
+	animation-name: shadow-anim;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+li:nth-child(1) {
+	animation-delay: 0s;
+}
+li:nth-child(2) {
+	animation-delay: 0.5s;
+}
+li:nth-child(3) {
+	animation-delay: 1s;
+}
+li:nth-child(4) {
+	animation-delay: 1.5s;
+}
+li:nth-child(5) {
+	animation-delay: 2s;
+}
+li:nth-child(6) {
+	animation-delay: 2.5s;
+}
+li:nth-child(7) {
+	animation-delay: 3s;
+}
+li:nth-child(8) {
+	animation-delay: 3.5s;
+}
+@keyframes shadow-anim {
+	0% {
+	}
+	50% {
+		text-shadow: 0px 20px 40px rgb(0, 0, 0);
+	}
+	100% {
+		transform: translateX(50px);
+	}
+}
